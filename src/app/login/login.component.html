@@ -1,0 +1,33 @@
+<div class="card" style="background: rgb(204, 224, 245);">
+  <div class="card-body">
+    <div class="container" style="text-align: center;">
+      <h1 class="form-heading">Login</h1>
+      <div>
+        <h2>Acceso a administradores</h2>
+        <p>Por favor ingresa tus credenciales</p>
+      </div>
+      <div>
+        <form id="formulario" [formGroup]="form">
+          <fieldset>
+            <div class="form-field">
+              <input class="form-control" placeholder="name" name="name" formControlName="name" type="text">
+            </div>
+            <br>
+            <div class="form-field">
+              <input class="form-control" placeholder="password" name="password" formControlName="password"
+                type="password">
+            </div>
+          </fieldset>
+          <br>
+          <br>
+          <div class="form-buttons">
+            <button class="btn btn-outline-primary" (click)="login()">Login</button>
+          </div>
+        </form>
+        <!-- <div style="color: red;" *ngIf="erro" class="notification is-danger">
+          {{error}}
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
